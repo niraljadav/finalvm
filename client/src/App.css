@@ -1,0 +1,369 @@
+@import url('https://fonts.googleapis.com/css?family=Noto+Serif');
+body {
+  /* background-color: #E8E4E7; */
+  padding-bottom: 2em;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  scrollbar-width: none;
+  font-family: 'Noto Serif', serif;
+  /* Firefox */
+  -ms-overflow-style: none;
+  /* IE 10+ */
+}
+
+body::-webkit-scrollbar {
+  /* WebKit */
+  width: 0;
+  height: 0;
+}
+
+/* Navbar */
+
+.navbar {
+  background-color: #351431;
+}
+
+.navbar-toggler-icon {
+  color: white;
+}
+
+.navbar-toggler-icon:active {
+  outline: none;
+}
+
+.navbar-brand, .nav-link {
+  color: white;
+}
+
+.navbar-brand:hover, .nav-link:hover {
+  color: #E0DBDF;
+}
+
+.dropdown-menu {
+  border-radius: 10%;
+  /* background-color: #351431; */
+}
+
+.triangle {
+  width: 0;
+  height: 0;
+  position: relative;
+  top: -15px;
+  right: -20px;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-bottom: 10px solid white;
+}
+
+.dropdown-item:hover {
+  color: white;
+  background-color: #351431;
+}
+
+.dropdown-item:active {
+  background-color: #775273;
+  color: white;
+}
+
+/* Landing */
+
+img {
+  width: 100%;
+}
+
+.landing {
+  position: relative;
+  background: url('./img/showcase_diary.jpg') no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 91.5vh;
+  margin-top: -24px;
+  /* overflow: hidden; */
+  margin-bottom: -50px;
+}
+
+.landing-inner {
+  padding-top: 80px;
+}
+
+.dark-overlay {
+  background-color: rgba(0, 0, 0, 0.7);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/*  */
+
+.card-form {
+  opacity: 0.9;
+}
+
+.latest-profiles-img {
+  width: 40px;
+  height: 40px;
+}
+
+.form-control::placeholder {
+  color: #bbb !important;
+}
+/* ------------------- Calendar Starts ------------------- */
+.dashboard{
+  height: 80vh;
+}
+.fa-plus-circle {
+  color: #351431;
+  margin-left: 0.5em;
+}
+
+.fa-plus-circle:hover {
+  color: #775273;
+}
+
+.rbc-toolbar-label {
+  color: #351431;
+  font-size: 2em;
+  font-weight: bold;
+}
+
+.rbc-toolbar button {
+  color: #351431;
+  background-color: transparent;
+  border-color: #351431;
+}
+
+.rbc-toolbar button:hover {
+  color: white;
+  background-color: #351431;
+  border-color: #351431;
+}
+
+.rbc-toolbar button:active {
+  color: white;
+  background-color: #351431;
+  border-color: #351431;
+}
+
+.rbc-toolbar button:focus {
+  outline: none;
+  color: white;
+  background-color: #351431;
+  border-color: #351431;
+}
+
+.rbc-header {
+  background-color: #775273;
+  color: white;
+}
+
+.rbc-show-more {
+  color: #775273
+}
+
+.rbc-show-more :hover {
+  color: #775273
+}
+
+.rbc-date-cell {
+  color: #775273;
+}
+
+.rbc-date-cell a {
+  cursor: default;
+}
+
+.rbc-day-bg {
+  cursor: pointer;
+}
+
+.rbc-event {
+  border: 1px solid #351431;
+  background-color: #E8E4E7;
+  color: #351431;
+}
+
+.rbc-today {
+  background-color: #D3C4D1;
+  box-shadow: 0px 0px 0px 2px #351431 inset;
+}
+
+.rbc-off-range {
+  color: #999999;
+}
+
+.btn-dark {
+  border: none;
+  outline: none;
+  background-color: #775273;
+}
+
+/* ------------------- Calendar Ends ------------------- */
+
+/* ------------------- Todo List Starts ------------------- */
+
+.todo-header h3 {
+  background-color: #351431;
+}
+
+.btn-outline-dark {
+  border: 1px solid #775273;
+  color: #775273
+}
+
+.btn-outline-dark:hover {
+  background-color: #775273;
+  color: white;
+}
+
+.todo-list {
+  position: relative;
+  overflow-y: auto;
+  overflow-x: hidden;
+  height: 445px;
+  /* border: 1px groove #351431; */
+  padding-top: 13%;
+}
+
+.todo-item {
+  background-color: #E8E4E7;
+  /* box-shadow: 0px 0px 2px 2px #351431 inset; */
+
+}
+
+.todo-list button {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.todo-item:hover{
+  box-shadow: 0px 0px 4px 4px #351431 inset;
+  /* font-weight: bold; */
+}
+.fa-trash-alt {
+  color: #351431;
+}
+
+.fa-trash-alt:hover {
+  color: tomato;
+}
+
+.check-container .square:before {
+  font-family: "Font Awesome 5 Free";
+  content: "\f0c8";
+  font-style: normal;
+}
+
+.check-container:hover .square:before {
+  font-family: "Font Awesome 5 Free";
+  content: "\f14a";
+  cursor: pointer;
+}
+
+.check-container .check-square:before {
+  font-family: "Font Awesome 5 Free";
+  content: "\f14a";
+  font-style: normal;
+}
+
+.check-container:hover .check-square:before {
+  font-family: "Font Awesome 5 Free";
+  content: "\f0c8";
+}
+
+/* ------------------- Todo List Ends ------------------- */
+
+/* ------------------- Journal Starts ------------------- */
+
+.post {
+  height: 14em;
+  line-height: 1.2em;
+  overflow: hidden;
+  border-bottom: 0.7em solid white;
+  text-align: justify;
+  white-space: pre-wrap;
+  -webkit-box-shadow: 0px 0px 6px 4px rgba(211, 196, 209, 1);
+  -moz-box-shadow: 0px 0px 6px 4px rgba(211, 196, 209, 1);
+  box-shadow: 0px 0px 6px 4px rgba(211, 196, 209, 1)
+}
+
+.post .h2 {
+  color: #775273;
+}
+
+.view {
+  white-space: pre-wrap;
+  text-align: justify;
+}
+
+.view .content {
+  -webkit-box-shadow: 0px 0px 6px 4px rgba(211, 196, 209, 1);
+  -moz-box-shadow: 0px 0px 6px 4px rgba(211, 196, 209, 1);
+  box-shadow: 0px 0px 6px 4px rgba(211, 196, 209, 1);
+  height: 27em;
+  overflow: auto;
+}
+
+.content p {
+  padding: 2%
+}
+
+/* ------------------- Journal Ends ------------------- */
+
+/* ------------------- Form Style Starts ------------------- */
+
+.form-container {
+  -webkit-box-shadow: 0px 0px 6px 4px rgba(211, 196, 209, 1);
+  -moz-box-shadow: 0px 0px 6px 4px rgba(211, 196, 209, 1);
+  box-shadow: 0px 0px 6px 4px rgba(211, 196, 209, 1);
+  padding: 2em;
+}
+
+.form-heading {
+  text-align: center;
+  background-color: #775273;
+  padding: 0.6em;
+  color: white;
+  margin-bottom: 1.2em;
+}
+
+input::-webkit-inner-spin-button {
+  display: none;
+}
+
+.fa-calendar {
+  position: relative;
+  top: 2.6em;
+  right: 1.3em;
+  pointer-events: none;
+}
+
+input::-webkit-calendar-picker-indicator {
+  width: 20px;
+  height: 20px;
+  color: transparent;
+}
+
+/* ------------------- Form Style Ends ------------------- */
+/* ------------------- Timeline Starts ------------------- */
+.timeline{
+  height: 5em;
+  line-height: 1.2em;
+  overflow: hidden;
+  border-bottom: 0.7em solid white;
+  text-align: justify;
+  white-space: pre-wrap;
+  -webkit-box-shadow: 0px 0px 6px 4px rgba(211, 196, 209, 1);
+  -moz-box-shadow: 0px 0px 6px 4px rgba(211, 196, 209, 1);
+  box-shadow: 0px 0px 6px 4px rgba(211, 196, 209, 1)
+}
+.timeline-day{
+  background-color: #351431;
+  color: white;
+  border-radius: 50%;
+}
+.timeline .h2 {
+  color: #775273;
+}
+/* ------------------- Timeline Ends ------------------- */
